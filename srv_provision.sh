@@ -7,12 +7,11 @@ yum install -y epel-release > /dev/null 2>&1
 yum localinstall -y http://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm > /dev/null 2>&1
 yum install -y puppetserver > /dev/null 2>&1
 
-
-cp /vagrant/puppet/autosign.conf /etc/puppetlabs/puppet   
+/bin/cp /vagrant/puppet/autosign.conf /etc/puppetlabs/puppet   
 mkdir -p /etc/puppetlabs/code/environments/production/modules
-cp -R /vagrant/puppet/modules/* /etc/puppetlabs/code/environments/production/modules
+/bin/cp -R /vagrant/puppet/modules/* /etc/puppetlabs/code/environments/production/modules
 chmod -R 0777 /etc/puppetlabs/code/environments/production/modules
-cp /vagrant/puppet/site.pp /etc/puppetlabs/code/environments/production/manifests
+/bin/cp /vagrant/puppet/site.pp /etc/puppetlabs/code/environments/production/manifests
 
 systemctl enable puppetserver
 systemctl restart puppetserver
