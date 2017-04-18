@@ -3,10 +3,7 @@ Bringing machine 'node1' up with 'virtualbox' provider...
 ==> svr: Importing base box 'centos/7'...
 [KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> svr: Matching MAC address for NAT networking...
 ==> svr: Checking if box 'centos/7' is up to date...
-==> svr: A newer version of the box 'centos/7' is available! You currently
-==> svr: have version '1702.01'. The latest is version '1703.01'. Run
-==> svr: `vagrant box update` to update.
-==> svr: Setting the name of the VM: lesson14_svr_1492537298086_51796
+==> svr: Setting the name of the VM: lesson14_svr_1492546306955_49328
 ==> svr: Fixed port collision for 22 => 2222. Now on port 2200.
 ==> svr: Clearing any previously set network interfaces...
 ==> svr: Preparing network interfaces based on configuration...
@@ -47,7 +44,7 @@ Resolving Dependencies
 --> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
 --> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
 --> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
----> Package kernel-devel.x86_64 0:3.10.0-514.6.2.el7 will be installed
+---> Package kernel-devel.x86_64 0:3.10.0-514.10.2.el7 will be installed
 ---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
 --> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
 --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
@@ -132,7 +129,7 @@ Dependencies Resolved
 ================================================================================
 Installing:
  gcc                       x86_64    4.8.5-11.el7              base        16 M
- kernel-devel              x86_64    3.10.0-514.6.2.el7        updates     13 M
+ kernel-devel              x86_64    3.10.0-514.10.2.el7       updates     13 M
  perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
 Installing for dependencies:
  cpp                       x86_64    4.8.5-11.el7              base       5.9 M
@@ -175,8 +172,8 @@ Install  3 Packages (+32 Dependent packages)
 Total download size: 53 M
 Installed size: 130 M
 Downloading packages:
-Public key for glibc-devel-2.17-157.el7_3.1.x86_64.rpm is not installed
-warning: /var/cache/yum/x86_64/7/updates/packages/glibc-devel-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
+warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
 Public key for cpp-4.8.5-11.el7.x86_64.rpm is not installed
 --------------------------------------------------------------------------------
 Total                                               10 MB/s |  53 MB  00:05     
@@ -224,7 +221,7 @@ Running transaction
   Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
   Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
   Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
-  Installing : kernel-devel-3.10.0-514.6.2.el7.x86_64                     35/35 
+  Installing : kernel-devel-3.10.0-514.10.2.el7.x86_64                    35/35 
   Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
   Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
   Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
@@ -232,8 +229,8 @@ Running transaction
   Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
   Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
   Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
-  Verifying  : cpp-4.8.5-11.el7.x86_64                                     8/35 
-  Verifying  : kernel-devel-3.10.0-514.6.2.el7.x86_64                      9/35 
+  Verifying  : kernel-devel-3.10.0-514.10.2.el7.x86_64                     8/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     9/35 
   Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
   Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
   Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
@@ -262,7 +259,7 @@ Running transaction
   Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
 
 Installed:
-  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.6.2.el7    
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.10.2.el7    
   perl.x86_64 4:5.16.3-291.el7    
 
 Dependency Installed:
@@ -318,16 +315,13 @@ Could not find the X.Org or XFree86 Window System, skipping.
 ==> svr: Mounting shared folders...
     svr: /vagrant => /home/student/workspace/lesson14
 ==> svr: Running provisioner: shell...
-    svr: Running: /tmp/vagrant-shell20170418-5082-vhzh92.sh
+    svr: Running: /tmp/vagrant-shell20170418-12516-8ydi0d.sh
 ==> svr: Created symlink from /etc/systemd/system/multi-user.target.wants/puppetserver.service to /usr/lib/systemd/system/puppetserver.service.
 ==> svr: 0
 ==> node1: Importing base box 'centos/7'...
-[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> node1: Matching MAC address for NAT networking...
+[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> node1: Matching MAC address for NAT networking...
 ==> node1: Checking if box 'centos/7' is up to date...
-==> node1: A newer version of the box 'centos/7' is available! You currently
-==> node1: have version '1702.01'. The latest is version '1703.01'. Run
-==> node1: `vagrant box update` to update.
-==> node1: Setting the name of the VM: lesson14_node1_1492537553441_4318
+==> node1: Setting the name of the VM: lesson14_node1_1492546560739_60756
 ==> node1: Fixed port collision for 22 => 2222. Now on port 2201.
 ==> node1: Clearing any previously set network interfaces...
 ==> node1: Preparing network interfaces based on configuration...
@@ -368,7 +362,7 @@ Resolving Dependencies
 --> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
 --> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
 --> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
----> Package kernel-devel.x86_64 0:3.10.0-514.6.2.el7 will be installed
+---> Package kernel-devel.x86_64 0:3.10.0-514.10.2.el7 will be installed
 ---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
 --> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
 --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
@@ -453,7 +447,7 @@ Dependencies Resolved
 ================================================================================
 Installing:
  gcc                       x86_64    4.8.5-11.el7              base        16 M
- kernel-devel              x86_64    3.10.0-514.6.2.el7        updates     13 M
+ kernel-devel              x86_64    3.10.0-514.10.2.el7       updates     13 M
  perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
 Installing for dependencies:
  cpp                       x86_64    4.8.5-11.el7              base       5.9 M
@@ -500,7 +494,7 @@ Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
 warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
 Public key for cpp-4.8.5-11.el7.x86_64.rpm is not installed
 --------------------------------------------------------------------------------
-Total                                              9.2 MB/s |  53 MB  00:05     
+Total                                               10 MB/s |  53 MB  00:05     
 Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 Importing GPG key 0xF4A80EB5:
  Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
@@ -545,7 +539,7 @@ Running transaction
   Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
   Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
   Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
-  Installing : kernel-devel-3.10.0-514.6.2.el7.x86_64                     35/35 
+  Installing : kernel-devel-3.10.0-514.10.2.el7.x86_64                    35/35 
   Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
   Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
   Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
@@ -553,8 +547,8 @@ Running transaction
   Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
   Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
   Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
-  Verifying  : cpp-4.8.5-11.el7.x86_64                                     8/35 
-  Verifying  : kernel-devel-3.10.0-514.6.2.el7.x86_64                      9/35 
+  Verifying  : kernel-devel-3.10.0-514.10.2.el7.x86_64                     8/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     9/35 
   Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
   Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
   Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
@@ -583,7 +577,7 @@ Running transaction
   Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
 
 Installed:
-  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.6.2.el7    
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.10.2.el7    
   perl.x86_64 4:5.16.3-291.el7    
 
 Dependency Installed:
@@ -639,7 +633,7 @@ Could not find the X.Org or XFree86 Window System, skipping.
 ==> node1: Mounting shared folders...
     node1: /vagrant => /home/student/workspace/lesson14
 ==> node1: Running provisioner: shell...
-    node1: Running: /tmp/vagrant-shell20170418-5082-g38wri.sh
+    node1: Running: /tmp/vagrant-shell20170418-12516-g1c3hm.sh
 ==> node1: Retrieving https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
 ==> node1: Preparing...                          ########################################
 ==> node1: Updating / installing...
@@ -702,4 +696,428 @@ Could not find the X.Org or XFree86 Window System, skipping.
 ==> node1:   ensure => 'running',
 ==> node1:   enable => 'true',
 ==> node1: }
-==> node1: 0
+==> node1: [0;36mDebug: Applying settings catalog for sections main, agent, ssl[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'confdir': 'File[/etc/puppetlabs/puppet]{:path=>"/etc/puppetlabs/puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'codedir': 'File[/etc/puppetlabs/code]{:path=>"/etc/puppetlabs/code", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Failed to load library 'cfpropertylist' for feature 'cfpropertylist'[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "operatingsystem".[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: fact "facterversion" has resolved to "3.6.3".[0m
+==> node1: [0;36mDebug: Facter: fact "aio_agent_version" has resolved to "1.10.0".[0m
+==> node1: [0;36mDebug: Facter: searching "/opt/puppetlabs/facter/facts.d" for external facts.[0m
+==> node1: [0;36mDebug: Facter: skipping external facts for "/etc/facter/facts.d": No such file or directory[0m
+==> node1: [0;36mDebug: Facter: skipping external facts for "/etc/puppetlabs/facter/facts.d": No such file or directory[0m
+==> node1: [0;36mDebug: Facter: no external facts were found.[0m
+==> node1: [0;36mDebug: Facter: resolving operating system facts.[0m
+==> node1: [0;36mDebug: Facter: resolving kernel facts.[0m
+==> node1: [0;36mDebug: Facter: fact "kernel" has resolved to "Linux".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelrelease" has resolved to "3.10.0-514.10.2.el7.x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelmajversion" has resolved to "3.10".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelversion" has resolved to "3.10.0".[0m
+==> node1: [0;36mDebug: Facter: executing command: lsb_release -a[0m
+==> node1: [0;36mDebug: Facter: lsb_release was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: fact "osfamily" has resolved to "RedHat".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystemmajrelease" has resolved to "7".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystemrelease" has resolved to "7.3.1611".[0m
+==> node1: [0;36mDebug: Facter: fact "hardwaremodel" has resolved to "x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "architecture" has resolved to "x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystem" has resolved to "CentOS".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux" has resolved to true.[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_enforced" has resolved to true.[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_current_mode" has resolved to "enforcing".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_config_mode" has resolved to "enforcing".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_config_policy" has resolved to "targeted".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_policyversion" has resolved to "28".[0m
+==> node1: [0;36mDebug: Facter: fact "os" has resolved to {
+==> node1:   architecture => "x86_64",
+==> node1:   family => "RedHat",
+==> node1:   hardware => "x86_64",
+==> node1:   name => "CentOS",
+==> node1:   release => {
+==> node1:     full => "7.3.1611",
+==> node1:     major => "7",
+==> node1:     minor => "3"
+==> node1:   },
+==> node1:   selinux => {
+==> node1:     config_mode => "enforcing",
+==> node1:     config_policy => "targeted",
+==> node1:     current_mode => "enforcing",
+==> node1:     enabled => true,
+==> node1:     enforced => true,
+==> node1:     policy_version => "28"
+==> node1:   }
+==> node1: }.[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderDirectoryservice: file /usr/bin/dsimport does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderLdap: feature ldap is missing[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderPw: file pw does not exist[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderUser_role_add: file roleadd does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'cfpropertylist' for feature 'cfpropertylist'[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderDirectoryservice: file /usr/bin/dscl does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderLdap: feature ldap is missing[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderPw: file pw does not exist[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'vardir': 'File[/opt/puppetlabs/puppet/cache]{:path=>"/opt/puppetlabs/puppet/cache", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'logdir': 'File[/var/log/puppetlabs/puppet]{:path=>"/var/log/puppetlabs/puppet", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'statedir': 'File[/opt/puppetlabs/puppet/cache/state]{:path=>"/opt/puppetlabs/puppet/cache/state", :mode=>"1755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'rundir': 'File[/var/run/puppetlabs]{:path=>"/var/run/puppetlabs", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'libdir': 'File[/opt/puppetlabs/puppet/cache/lib]{:path=>"/opt/puppetlabs/puppet/cache/lib", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'hiera_config': 'File[/etc/puppetlabs/puppet/hiera.yaml]{:path=>"/etc/puppetlabs/puppet/hiera.yaml", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'preview_outputdir': 'File[/opt/puppetlabs/puppet/cache/preview]{:path=>"/opt/puppetlabs/puppet/cache/preview", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'certdir': 'File[/etc/puppetlabs/puppet/ssl/certs]{:path=>"/etc/puppetlabs/puppet/ssl/certs", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'ssldir': 'File[/etc/puppetlabs/puppet/ssl]{:path=>"/etc/puppetlabs/puppet/ssl", :mode=>"771", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'publickeydir': 'File[/etc/puppetlabs/puppet/ssl/public_keys]{:path=>"/etc/puppetlabs/puppet/ssl/public_keys", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'requestdir': 'File[/etc/puppetlabs/puppet/ssl/certificate_requests]{:path=>"/etc/puppetlabs/puppet/ssl/certificate_requests", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'privatekeydir': 'File[/etc/puppetlabs/puppet/ssl/private_keys]{:path=>"/etc/puppetlabs/puppet/ssl/private_keys", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'privatedir': 'File[/etc/puppetlabs/puppet/ssl/private]{:path=>"/etc/puppetlabs/puppet/ssl/private", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "hostname".[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: resolving networking facts.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip route show[0m
+==> node1: [0;36mDebug: Facter: default via 10.0.2.2 dev eth0  proto static  metric 100[0m
+==> node1: [0;36mDebug: Facter: 10.0.2.0/24 dev eth0  proto kernel  scope link  src 10.0.2.15  metric 100[0m
+==> node1: [0;36mDebug: Facter: 169.254.0.0/16 dev eth1  scope link  metric 1003[0m
+==> node1: [0;36mDebug: Facter: 192.168.10.0/24 dev eth1  proto kernel  scope link  src 192.168.10.102[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip -6 route show[0m
+==> node1: [0;36mDebug: Facter: unreachable ::/96 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable ::ffff:0.0.0.0/96 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:a00::/24 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:7f00::/24 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:a9fe::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:ac10::/28 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:c0a8::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:e000::/19 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 3ffe:ffff::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: fe80::/64 dev eth0  proto kernel  metric 256[0m
+==> node1: [0;36mDebug: Facter: fe80::/64 dev eth1  proto kernel  metric 256[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: using the FQDN returned by gethostname: puppet-node1.epbyminw2473.minsk.epam.com.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhclient" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhcp" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhcp3" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/NetworkManager" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: reading "/var/lib/NetworkManager/dhclient-5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03-eth0.lease" for dhclient lease information.[0m
+==> node1: [0;36mDebug: Facter: reading "/var/lib/NetworkManager/dhclient-6c9a8c41-1c4c-3ce4-8100-8dce40f15739-eth1.lease" for dhclient lease information.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/db" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: executing command: dhcpcd -U eth1[0m
+==> node1: [0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: executing command: dhcpcd -U lo[0m
+==> node1: [0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show eth0[0m
+==> node1: [0;36mDebug: Facter: 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT qlen 1000[0m
+==> node1: [0;36mDebug: Facter: link/ether 52:54:00:88:15:b6 brd ff:ff:ff:ff:ff:ff[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show eth1[0m
+==> node1: [0;36mDebug: Facter: 3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT qlen 1000[0m
+==> node1: [0;36mDebug: Facter: link/ether 08:00:27:90:a8:d0 brd ff:ff:ff:ff:ff:ff[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show lo[0m
+==> node1: [0;36mDebug: Facter: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT qlen 1[0m
+==> node1: [0;36mDebug: Facter: link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_eth0" has resolved to "10.0.2.15".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress" has resolved to "10.0.2.15".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_eth0" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_eth0" has resolved to "10.0.2.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network" has resolved to "10.0.2.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_eth0" has resolved to "fe80::5054:ff:fe88:15b6".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6" has resolved to "fe80::5054:ff:fe88:15b6".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_eth0" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_eth0" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress_eth0" has resolved to "52:54:00:88:15:b6".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress" has resolved to "52:54:00:88:15:b6".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_eth0" has resolved to 1500.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_eth1" has resolved to "192.168.10.102".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_eth1" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_eth1" has resolved to "192.168.10.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_eth1" has resolved to "fe80::a00:27ff:fe90:a8d0".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_eth1" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_eth1" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress_eth1" has resolved to "08:00:27:90:a8:d0".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_eth1" has resolved to 1500.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_lo" has resolved to "127.0.0.1".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_lo" has resolved to "255.0.0.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_lo" has resolved to "127.0.0.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_lo" has resolved to "::1".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_lo" has resolved to "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_lo" has resolved to "::1".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_lo" has resolved to 65536.[0m
+==> node1: [0;36mDebug: Facter: fact "hostname" has resolved to "puppet-node1".[0m
+==> node1: [0;36mDebug: Facter: fact "domain" has resolved to "epbyminw2473.minsk.epam.com".[0m
+==> node1: [0;36mDebug: Facter: fact "fqdn" has resolved to "puppet-node1.epbyminw2473.minsk.epam.com".[0m
+==> node1: [0;36mDebug: Facter: fact "interfaces" has resolved to "eth0,eth1,lo".[0m
+==> node1: [0;36mDebug: Facter: fact "dhcp_servers" has resolved to {
+==> node1:   eth0 => "10.0.2.2",
+==> node1:   system => "10.0.2.2"
+==> node1: }.[0m
+==> node1: [0;36mDebug: Facter: fact "networking" has resolved to {
+==> node1:   dhcp => "10.0.2.2",
+==> node1:   domain => "epbyminw2473.minsk.epam.com",
+==> node1:   fqdn => "puppet-node1.epbyminw2473.minsk.epam.com",
+==> node1:   hostname => "puppet-node1",
+==> node1:   interfaces => {
+==> node1:     eth0 => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "10.0.2.15",
+==> node1:           netmask => "255.255.255.0",
+==> node1:           network => "10.0.2.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "fe80::5054:ff:fe88:15b6",
+==> node1:           netmask => "ffff:ffff:ffff:ffff::",
+==> node1:           network => "fe80::"
+==> node1:         }
+==> node1:       ],
+==> node1:       dhcp => "10.0.2.2",
+==> node1:       ip => "10.0.2.15",
+==> node1:       ip6 => "fe80::5054:ff:fe88:15b6",
+==> node1:       mac => "52:54:00:88:15:b6",
+==> node1:       mtu => 1500,
+==> node1:       netmask => "255.255.255.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:       network => "10.0.2.0",
+==> node1:       network6 => "fe80::"
+==> node1:     },
+==> node1:     eth1 => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "192.168.10.102",
+==> node1:           netmask => "255.255.255.0",
+==> node1:           network => "192.168.10.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "fe80::a00:27ff:fe90:a8d0",
+==> node1:           netmask => "ffff:ffff:ffff:ffff::",
+==> node1:           network => "fe80::"
+==> node1:         }
+==> node1:       ],
+==> node1:       ip => "192.168.10.102",
+==> node1:       ip6 => "fe80::a00:27ff:fe90:a8d0",
+==> node1:       mac => "08:00:27:90:a8:d0",
+==> node1:       mtu => 1500,
+==> node1:       netmask => "255.255.255.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:       network => "192.168.10.0",
+==> node1:       network6 => "fe80::"
+==> node1:     },
+==> node1:     lo => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "127.0.0.1",
+==> node1:           netmask => "255.0.0.0",
+==> node1:           network => "127.0.0.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "::1",
+==> node1:           netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+==> node1:           network => "::1"
+==> node1:         }
+==> node1:       ],
+==> node1:       ip => "127.0.0.1",
+==> node1:       ip6 => "::1",
+==> node1:       mtu => 65536,
+==> node1:       netmask => "255.0.0.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+==> node1:       network => "127.0.0.0",
+==> node1:       network6 => "::1"
+==> node1:     }
+==> node1:   },
+==> node1:   ip => "10.0.2.15",
+==> node1:   ip6 => "fe80::5054:ff:fe88:15b6",
+==> node1:   mac => "52:54:00:88:15:b6",
+==> node1:   mtu => 1500,
+==> node1:   netmask => "255.255.255.0",
+==> node1:   netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:   network => "10.0.2.0",
+==> node1:   network6 => "fe80::",
+==> node1:   primary => "eth0"
+==> node1: }.[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "domain".[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'statefile': 'File[/opt/puppetlabs/puppet/cache/state/state.yaml]{:path=>"/opt/puppetlabs/puppet/cache/state/state.yaml", :mode=>"660", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'transactionstorefile': 'File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]{:path=>"/opt/puppetlabs/puppet/cache/state/transactionstore.yaml", :mode=>"660", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'clientyamldir': 'File[/opt/puppetlabs/puppet/cache/client_yaml]{:path=>"/opt/puppetlabs/puppet/cache/client_yaml", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'client_datadir': 'File[/opt/puppetlabs/puppet/cache/client_data]{:path=>"/opt/puppetlabs/puppet/cache/client_data", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'clientbucketdir': 'File[/opt/puppetlabs/puppet/cache/clientbucket]{:path=>"/opt/puppetlabs/puppet/cache/clientbucket", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'graphdir': 'File[/opt/puppetlabs/puppet/cache/state/graphs]{:path=>"/opt/puppetlabs/puppet/cache/state/graphs", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'pluginfactdest': 'File[/opt/puppetlabs/puppet/cache/facts.d]{:path=>"/opt/puppetlabs/puppet/cache/facts.d", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/selrange: Found selrange default 's0' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/seluser: Found seluser default 'system_u' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/selrole: Found selrole default 'object_r' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/seltype: Found seltype default 'var_log_t' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/selrange: Found selrange default 's0' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/seluser: Found seluser default 'system_u' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/selrole: Found selrole default 'object_r' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/seltype: Found seltype default 'var_run_t' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/selrange: Found selrange default 's0' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/seltype: Found seltype default 'lib_t' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/selrange: Found selrange default 's0' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]: Adding autorequire relationship with File[/etc/puppetlabs/puppet][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]: Adding autorequire relationship with File[/etc/puppetlabs/puppet][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]: Adding autorequire relationship with File[/etc/puppetlabs/code][0m
+==> node1: [0;36mDebug: Finishing transaction 22211180[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Runtime environment: puppet_version=4.10.0, ruby_version=2.1.9, run_mode=agent, default_encoding=UTF-8[0m
+==> node1: [0;32mInfo: Creating a new SSL key for puppet-node1.epbyminw2473.minsk.epam.com[0m
+==> node1: [0;36mDebug: Using cached certificate for ca[0m
+==> node1: [0;36mDebug: Dynamically-bound server lookup failed, falling back to ca_server setting[0m
+==> node1: [0;36mDebug: Dynamically-bound port lookup failed; falling back to ca_port setting[0m
+==> node1: [0;36mDebug: Using cached certificate for ca[0m
+==> node1: [0;36mDebug: Dynamically-bound server lookup failed, falling back to ca_server setting[0m
+==> node1: [0;36mDebug: Dynamically-bound port lookup failed; falling back to ca_port setting[0m
+==> node1: [0;36mDebug: Creating new connection for https://puppet-server.epbyminw2473.minsk.epam.com:8140[0m
+==> node1: [0;32mInfo: Caching certificate for puppet-node1.epbyminw2473.minsk.epam.com[0m
+==> node1: Exiting; failed to retrieve certificate and waitforcert is disabled
+==> node1: [1;31mError: Could not request certificate: The certificate retrieved from the master does not match the agent's private key.
+==> node1: Certificate fingerprint: EB:F5:87:E7:E1:41:AE:D3:1C:42:8C:33:58:3A:4A:5F:F5:B1:67:14:31:5B:18:B0:EF:82:CD:13:0B:12:CE:1E
+==> node1: To fix this, remove the certificate from both the master and the agent and then start a puppet run, which will automatically regenerate a certificate.
+==> node1: On the master:
+==> node1:   puppet cert clean puppet-node1.epbyminw2473.minsk.epam.com
+==> node1: On the agent:
+==> node1:   1a. On most platforms: find /etc/puppetlabs/puppet/ssl -name puppet-node1.epbyminw2473.minsk.epam.com.pem -delete
+==> node1:   1b. On Windows: del "\etc\puppetlabs\puppet\ssl\certs\puppet-node1.epbyminw2473.minsk.epam.com.pem" /f
+==> node1:   2. puppet agent -t
+==> node1: [0m
+==> node1: provisioned
