@@ -14,7 +14,7 @@ cp /vagrant/puppet/autosign.conf /etc/puppetlabs/puppet
 source ~/.bashrc
 mkdir -p /etc/puppetlabs/code/environments/production/modules
 cp -R /vagrant/puppet/modules/* /etc/puppetlabs/code/environments/production/modules
-chmod -R 0777 /etc/puppetlabs/code/environments/production/modules/jboss/files
+chmod -R 0777 /etc/puppetlabs/code/environments/production/modules
 cp /vagrant/puppet/site.pp /etc/puppetlabs/code/environments/production/manifests
 
 systemctl enable puppetserver
