@@ -8,5 +8,7 @@ grep -q -F '192.168.10.102 puppet-node1' /etc/hosts || echo '192.168.100.102 pup
 
 /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 
+puppet agent -t --verbose --debug
+
 echo '0'
 exit 0
