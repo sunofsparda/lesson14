@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       svr_puppet.vm.host_name = "puppet-server.epbyminw2473.minsk.epam.com"
       svr_puppet.vm.network "private_network", ip:"192.168.10.101"
       svr_puppet.vm.provider :virtualbox do |vbox|
-         vbox.customize ["modifyvm", :id, "--memory", "2048"]
+         vbox.customize ["modifyvm", :id, "--memory", "3096"]
       end
       svr_puppet.vm.provision "shell", path: "srv_provision.sh"
     end
