@@ -11,7 +11,6 @@ yum install -y puppetserver > /dev/null 2>&1
 
 
 cp /vagrant/puppet/autosign.conf /etc/puppetlabs/puppet   
-source ~/.bashrc
 mkdir -p /etc/puppetlabs/code/environments/production/modules
 cp -R /vagrant/puppet/modules/* /etc/puppetlabs/code/environments/production/modules
 chmod -R 0777 /etc/puppetlabs/code/environments/production/modules
