@@ -17,6 +17,8 @@ cp -R /vagrant/puppet/modules/* /etc/puppetlabs/code/environments/production/mod
 chmod -R 0777 /etc/puppetlabs/code/environments/production/modules/jboss/files
 cp /vagrant/puppet/site.pp /etc/puppetlabs/code/environments/production/manifests
 
-
 systemctl enable puppetserver
 systemctl restart puppetserver
+
+echo '0'
+exit 0
