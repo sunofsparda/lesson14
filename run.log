@@ -1,0 +1,1123 @@
+Bringing machine 'svr' up with 'virtualbox' provider...
+Bringing machine 'node1' up with 'virtualbox' provider...
+==> svr: Importing base box 'centos/7'...
+[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> svr: Matching MAC address for NAT networking...
+==> svr: Checking if box 'centos/7' is up to date...
+==> svr: Setting the name of the VM: lesson14_svr_1492546306955_49328
+==> svr: Fixed port collision for 22 => 2222. Now on port 2200.
+==> svr: Clearing any previously set network interfaces...
+==> svr: Preparing network interfaces based on configuration...
+    svr: Adapter 1: nat
+    svr: Adapter 2: hostonly
+==> svr: Forwarding ports...
+    svr: 22 (guest) => 2200 (host) (adapter 1)
+==> svr: Running 'pre-boot' VM customizations...
+==> svr: Booting VM...
+==> svr: Waiting for machine to boot. This may take a few minutes...
+    svr: SSH address: 127.0.0.1:2200
+    svr: SSH username: vagrant
+    svr: SSH auth method: private key
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: Warning: Remote connection disconnect. Retrying...
+    svr: 
+    svr: Vagrant insecure key detected. Vagrant will automatically replace
+    svr: this with a newly generated keypair for better security.
+    svr: 
+    svr: Inserting generated public key within guest...
+    svr: Removing insecure key from the guest if it's present...
+    svr: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> svr: Machine booted and ready!
+[svr] No installation found.
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: ftp.byfly.by
+ * extras: ftp.byfly.by
+ * updates: ftp.byfly.by
+Package binutils-2.25.1-22.base.el7.x86_64 already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package bzip2-1.0.6-13.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-11.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-11.el7 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+---> Package kernel-devel.x86_64 0:3.10.0-514.10.2.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-11.el7 will be installed
+---> Package glibc-devel.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: glibc-headers = 2.17-157.el7_3.1 for package: glibc-devel-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-157.el7_3.1.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-2.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-2.el7.noarch
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-157.el7_3.1.x86_64
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-291.el7 will be installed
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-514.16.1.el7 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ gcc                       x86_64    4.8.5-11.el7              base        16 M
+ kernel-devel              x86_64    3.10.0-514.10.2.el7       updates     13 M
+ perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
+Installing for dependencies:
+ cpp                       x86_64    4.8.5-11.el7              base       5.9 M
+ glibc-devel               x86_64    2.17-157.el7_3.1          updates    1.1 M
+ glibc-headers             x86_64    2.17-157.el7_3.1          updates    668 k
+ kernel-headers            x86_64    3.10.0-514.16.1.el7       updates    4.8 M
+ libmpc                    x86_64    1.0.1-3.el7               base        51 k
+ mpfr                      x86_64    3.1.1-4.el7               base       203 k
+ perl-Carp                 noarch    1.26-244.el7              base        19 k
+ perl-Encode               x86_64    2.51-7.el7                base       1.5 M
+ perl-Exporter             noarch    5.68-3.el7                base        28 k
+ perl-File-Path            noarch    2.09-2.el7                base        26 k
+ perl-File-Temp            noarch    0.23.01-3.el7             base        56 k
+ perl-Filter               x86_64    1.49-3.el7                base        76 k
+ perl-Getopt-Long          noarch    2.40-2.el7                base        56 k
+ perl-HTTP-Tiny            noarch    0.033-3.el7               base        38 k
+ perl-PathTools            x86_64    3.40-5.el7                base        82 k
+ perl-Pod-Escapes          noarch    1:1.04-291.el7            base        51 k
+ perl-Pod-Perldoc          noarch    3.20-4.el7                base        87 k
+ perl-Pod-Simple           noarch    1:3.28-4.el7              base       216 k
+ perl-Pod-Usage            noarch    1.63-3.el7                base        27 k
+ perl-Scalar-List-Utils    x86_64    1.27-248.el7              base        36 k
+ perl-Socket               x86_64    2.010-4.el7               base        49 k
+ perl-Storable             x86_64    2.45-3.el7                base        77 k
+ perl-Text-ParseWords      noarch    3.29-4.el7                base        14 k
+ perl-Time-HiRes           x86_64    4:1.9725-3.el7            base        45 k
+ perl-Time-Local           noarch    1.2300-2.el7              base        24 k
+ perl-constant             noarch    1.27-2.el7                base        19 k
+ perl-libs                 x86_64    4:5.16.3-291.el7          base       688 k
+ perl-macros               x86_64    4:5.16.3-291.el7          base        43 k
+ perl-parent               noarch    1:0.225-244.el7           base        12 k
+ perl-podlators            noarch    2.5.1-3.el7               base       112 k
+ perl-threads              x86_64    1.87-4.el7                base        49 k
+ perl-threads-shared       x86_64    1.43-6.el7                base        39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+32 Dependent packages)
+
+Total download size: 53 M
+Installed size: 130 M
+Downloading packages:
+Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
+warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for cpp-4.8.5-11.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                               10 MB/s |  53 MB  00:05     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-3.1611.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                     1/35 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                   2/35 
+  Installing : cpp-4.8.5-11.el7.x86_64                                     3/35 
+  Installing : 1:perl-parent-0.225-244.el7.noarch                          4/35 
+  Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           5/35 
+  Installing : perl-podlators-2.5.1-3.el7.noarch                           6/35 
+  Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          7/35 
+  Installing : 1:perl-Pod-Escapes-1.04-291.el7.noarch                      8/35 
+  Installing : perl-Encode-2.51-7.el7.x86_64                               9/35 
+  Installing : perl-Text-ParseWords-3.29-4.el7.noarch                     10/35 
+  Installing : perl-Pod-Usage-1.63-3.el7.noarch                           11/35 
+  Installing : perl-threads-1.87-4.el7.x86_64                             12/35 
+  Installing : perl-Storable-2.45-3.el7.x86_64                            13/35 
+  Installing : perl-Exporter-5.68-3.el7.noarch                            14/35 
+  Installing : perl-constant-1.27-2.el7.noarch                            15/35 
+  Installing : perl-Time-Local-1.2300-2.el7.noarch                        16/35 
+  Installing : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Installing : perl-Carp-1.26-244.el7.noarch                              18/35 
+  Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      19/35 
+  Installing : perl-threads-shared-1.43-6.el7.x86_64                      20/35 
+  Installing : perl-PathTools-3.40-5.el7.x86_64                           21/35 
+  Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Installing : 4:perl-libs-5.16.3-291.el7.x86_64                          23/35 
+  Installing : 4:perl-macros-5.16.3-291.el7.x86_64                        24/35 
+  Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        25/35 
+  Installing : perl-File-Temp-0.23.01-3.el7.noarch                        26/35 
+  Installing : perl-File-Path-2.09-2.el7.noarch                           27/35 
+  Installing : perl-Filter-1.49-3.el7.x86_64                              28/35 
+  Installing : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Installing : 4:perl-5.16.3-291.el7.x86_64                               30/35 
+  Installing : kernel-headers-3.10.0-514.16.1.el7.x86_64                  31/35 
+  Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
+  Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
+  Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
+  Installing : kernel-devel-3.10.0-514.10.2.el7.x86_64                    35/35 
+  Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
+  Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
+  Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
+  Verifying  : perl-threads-1.87-4.el7.x86_64                              4/35 
+  Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
+  Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
+  Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
+  Verifying  : kernel-devel-3.10.0-514.10.2.el7.x86_64                     8/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     9/35 
+  Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
+  Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
+  Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
+  Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/35 
+  Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/35 
+  Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/35 
+  Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         16/35 
+  Verifying  : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Verifying  : glibc-devel-2.17-157.el7_3.1.x86_64                        18/35 
+  Verifying  : kernel-headers-3.10.0-514.16.1.el7.x86_64                  19/35 
+  Verifying  : perl-Carp-1.26-244.el7.noarch                              20/35 
+  Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      21/35 
+  Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                  23/35 
+  Verifying  : 4:perl-libs-5.16.3-291.el7.x86_64                          24/35 
+  Verifying  : 4:perl-macros-5.16.3-291.el7.x86_64                        25/35 
+  Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           26/35 
+  Verifying  : perl-Encode-2.51-7.el7.x86_64                              27/35 
+  Verifying  : perl-podlators-2.5.1-3.el7.noarch                          28/35 
+  Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Verifying  : perl-File-Path-2.09-2.el7.noarch                           30/35 
+  Verifying  : 4:perl-5.16.3-291.el7.x86_64                               31/35 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                    32/35 
+  Verifying  : perl-Filter-1.49-3.el7.x86_64                              33/35 
+  Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     34/35 
+  Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
+
+Installed:
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.10.2.el7    
+  perl.x86_64 4:5.16.3-291.el7    
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-11.el7                                                     
+  glibc-devel.x86_64 0:2.17-157.el7_3.1                                         
+  glibc-headers.x86_64 0:2.17-157.el7_3.1                                       
+  kernel-headers.x86_64 0:3.10.0-514.16.1.el7                                   
+  libmpc.x86_64 0:1.0.1-3.el7                                                   
+  mpfr.x86_64 0:3.1.1-4.el7                                                     
+  perl-Carp.noarch 0:1.26-244.el7                                               
+  perl-Encode.x86_64 0:2.51-7.el7                                               
+  perl-Exporter.noarch 0:5.68-3.el7                                             
+  perl-File-Path.noarch 0:2.09-2.el7                                            
+  perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+  perl-Filter.x86_64 0:1.49-3.el7                                               
+  perl-Getopt-Long.noarch 0:2.40-2.el7                                          
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+  perl-PathTools.x86_64 0:3.40-5.el7                                            
+  perl-Pod-Escapes.noarch 1:1.04-291.el7                                        
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+  perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+  perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+  perl-Socket.x86_64 0:2.010-4.el7                                              
+  perl-Storable.x86_64 0:2.45-3.el7                                             
+  perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+  perl-Time-Local.noarch 0:1.2300-2.el7                                         
+  perl-constant.noarch 0:1.27-2.el7                                             
+  perl-libs.x86_64 4:5.16.3-291.el7                                             
+  perl-macros.x86_64 4:5.16.3-291.el7                                           
+  perl-parent.noarch 1:0.225-244.el7                                            
+  perl-podlators.noarch 0:2.5.1-3.el7                                           
+  perl-threads.x86_64 0:1.87-4.el7                                              
+  perl-threads-shared.x86_64 0:1.43-6.el7                                       
+
+Complete!
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+mount: /dev/loop0 is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.1.16 - guest version is unknown
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.1.16 Guest Additions for Linux...........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+vboxadd.sh: Building Guest Additions kernel modules.
+vboxadd.sh: Starting the VirtualBox Guest Additions.
+
+Could not find the X.Org or XFree86 Window System, skipping.
+==> svr: Checking for guest additions in VM...
+==> svr: Setting hostname...
+==> svr: Configuring and enabling network interfaces...
+==> svr: Mounting shared folders...
+    svr: /vagrant => /home/student/workspace/lesson14
+==> svr: Running provisioner: shell...
+    svr: Running: /tmp/vagrant-shell20170418-12516-8ydi0d.sh
+==> svr: Created symlink from /etc/systemd/system/multi-user.target.wants/puppetserver.service to /usr/lib/systemd/system/puppetserver.service.
+==> svr: 0
+==> node1: Importing base box 'centos/7'...
+[KProgress: 20%[KProgress: 40%[KProgress: 70%[KProgress: 90%[K==> node1: Matching MAC address for NAT networking...
+==> node1: Checking if box 'centos/7' is up to date...
+==> node1: Setting the name of the VM: lesson14_node1_1492546560739_60756
+==> node1: Fixed port collision for 22 => 2222. Now on port 2201.
+==> node1: Clearing any previously set network interfaces...
+==> node1: Preparing network interfaces based on configuration...
+    node1: Adapter 1: nat
+    node1: Adapter 2: hostonly
+==> node1: Forwarding ports...
+    node1: 22 (guest) => 2201 (host) (adapter 1)
+==> node1: Running 'pre-boot' VM customizations...
+==> node1: Booting VM...
+==> node1: Waiting for machine to boot. This may take a few minutes...
+    node1: SSH address: 127.0.0.1:2201
+    node1: SSH username: vagrant
+    node1: SSH auth method: private key
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: Warning: Remote connection disconnect. Retrying...
+    node1: 
+    node1: Vagrant insecure key detected. Vagrant will automatically replace
+    node1: this with a newly generated keypair for better security.
+    node1: 
+    node1: Inserting generated public key within guest...
+    node1: Removing insecure key from the guest if it's present...
+    node1: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> node1: Machine booted and ready!
+[node1] No installation found.
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+ * base: ftp.byfly.by
+ * extras: ftp.byfly.by
+ * updates: ftp.byfly.by
+Package binutils-2.25.1-22.base.el7.x86_64 already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package bzip2-1.0.6-13.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-11.el7 will be installed
+--> Processing Dependency: cpp = 4.8.5-11.el7 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-11.el7.x86_64
+---> Package kernel-devel.x86_64 0:3.10.0-514.10.2.el7 will be installed
+---> Package perl.x86_64 4:5.16.3-291.el7 will be installed
+--> Processing Dependency: perl-libs = 4:5.16.3-291.el7 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-macros for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl-libs for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Getopt::Long) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(File::Path) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-291.el7.x86_64
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-11.el7 will be installed
+---> Package glibc-devel.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: glibc-headers = 2.17-157.el7_3.1 for package: glibc-devel-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-157.el7_3.1.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be installed
+--> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-2.el7.noarch
+--> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-2.el7.noarch
+---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+--> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+--> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed
+---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+---> Package perl-libs.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-macros.x86_64 4:5.16.3-291.el7 will be installed
+---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-157.el7_3.1 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-157.el7_3.1.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-157.el7_3.1.x86_64
+---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+---> Package perl-Pod-Escapes.noarch 1:1.04-291.el7 will be installed
+---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+--> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+--> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-514.16.1.el7 will be installed
+---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+--> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+--> Running transaction check
+---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ gcc                       x86_64    4.8.5-11.el7              base        16 M
+ kernel-devel              x86_64    3.10.0-514.10.2.el7       updates     13 M
+ perl                      x86_64    4:5.16.3-291.el7          base       8.0 M
+Installing for dependencies:
+ cpp                       x86_64    4.8.5-11.el7              base       5.9 M
+ glibc-devel               x86_64    2.17-157.el7_3.1          updates    1.1 M
+ glibc-headers             x86_64    2.17-157.el7_3.1          updates    668 k
+ kernel-headers            x86_64    3.10.0-514.16.1.el7       updates    4.8 M
+ libmpc                    x86_64    1.0.1-3.el7               base        51 k
+ mpfr                      x86_64    3.1.1-4.el7               base       203 k
+ perl-Carp                 noarch    1.26-244.el7              base        19 k
+ perl-Encode               x86_64    2.51-7.el7                base       1.5 M
+ perl-Exporter             noarch    5.68-3.el7                base        28 k
+ perl-File-Path            noarch    2.09-2.el7                base        26 k
+ perl-File-Temp            noarch    0.23.01-3.el7             base        56 k
+ perl-Filter               x86_64    1.49-3.el7                base        76 k
+ perl-Getopt-Long          noarch    2.40-2.el7                base        56 k
+ perl-HTTP-Tiny            noarch    0.033-3.el7               base        38 k
+ perl-PathTools            x86_64    3.40-5.el7                base        82 k
+ perl-Pod-Escapes          noarch    1:1.04-291.el7            base        51 k
+ perl-Pod-Perldoc          noarch    3.20-4.el7                base        87 k
+ perl-Pod-Simple           noarch    1:3.28-4.el7              base       216 k
+ perl-Pod-Usage            noarch    1.63-3.el7                base        27 k
+ perl-Scalar-List-Utils    x86_64    1.27-248.el7              base        36 k
+ perl-Socket               x86_64    2.010-4.el7               base        49 k
+ perl-Storable             x86_64    2.45-3.el7                base        77 k
+ perl-Text-ParseWords      noarch    3.29-4.el7                base        14 k
+ perl-Time-HiRes           x86_64    4:1.9725-3.el7            base        45 k
+ perl-Time-Local           noarch    1.2300-2.el7              base        24 k
+ perl-constant             noarch    1.27-2.el7                base        19 k
+ perl-libs                 x86_64    4:5.16.3-291.el7          base       688 k
+ perl-macros               x86_64    4:5.16.3-291.el7          base        43 k
+ perl-parent               noarch    1:0.225-244.el7           base        12 k
+ perl-podlators            noarch    2.5.1-3.el7               base       112 k
+ perl-threads              x86_64    1.87-4.el7                base        49 k
+ perl-threads-shared       x86_64    1.43-6.el7                base        39 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+32 Dependent packages)
+
+Total download size: 53 M
+Installed size: 130 M
+Downloading packages:
+Public key for glibc-headers-2.17-157.el7_3.1.x86_64.rpm is not installed
+warning: /var/cache/yum/x86_64/7/updates/packages/glibc-headers-2.17-157.el7_3.1.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+Public key for cpp-4.8.5-11.el7.x86_64.rpm is not installed
+--------------------------------------------------------------------------------
+Total                                               10 MB/s |  53 MB  00:05     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-3.1611.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                     1/35 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                   2/35 
+  Installing : cpp-4.8.5-11.el7.x86_64                                     3/35 
+  Installing : 1:perl-parent-0.225-244.el7.noarch                          4/35 
+  Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           5/35 
+  Installing : perl-podlators-2.5.1-3.el7.noarch                           6/35 
+  Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          7/35 
+  Installing : 1:perl-Pod-Escapes-1.04-291.el7.noarch                      8/35 
+  Installing : perl-Encode-2.51-7.el7.x86_64                               9/35 
+  Installing : perl-Text-ParseWords-3.29-4.el7.noarch                     10/35 
+  Installing : perl-Pod-Usage-1.63-3.el7.noarch                           11/35 
+  Installing : perl-threads-1.87-4.el7.x86_64                             12/35 
+  Installing : perl-Storable-2.45-3.el7.x86_64                            13/35 
+  Installing : perl-Exporter-5.68-3.el7.noarch                            14/35 
+  Installing : perl-constant-1.27-2.el7.noarch                            15/35 
+  Installing : perl-Time-Local-1.2300-2.el7.noarch                        16/35 
+  Installing : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Installing : perl-Carp-1.26-244.el7.noarch                              18/35 
+  Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      19/35 
+  Installing : perl-threads-shared-1.43-6.el7.x86_64                      20/35 
+  Installing : perl-PathTools-3.40-5.el7.x86_64                           21/35 
+  Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Installing : 4:perl-libs-5.16.3-291.el7.x86_64                          23/35 
+  Installing : 4:perl-macros-5.16.3-291.el7.x86_64                        24/35 
+  Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        25/35 
+  Installing : perl-File-Temp-0.23.01-3.el7.noarch                        26/35 
+  Installing : perl-File-Path-2.09-2.el7.noarch                           27/35 
+  Installing : perl-Filter-1.49-3.el7.x86_64                              28/35 
+  Installing : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Installing : 4:perl-5.16.3-291.el7.x86_64                               30/35 
+  Installing : kernel-headers-3.10.0-514.16.1.el7.x86_64                  31/35 
+  Installing : glibc-headers-2.17-157.el7_3.1.x86_64                      32/35 
+  Installing : glibc-devel-2.17-157.el7_3.1.x86_64                        33/35 
+  Installing : gcc-4.8.5-11.el7.x86_64                                    34/35 
+  Installing : kernel-devel-3.10.0-514.10.2.el7.x86_64                    35/35 
+  Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/35 
+  Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/35 
+  Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/35 
+  Verifying  : perl-threads-1.87-4.el7.x86_64                              4/35 
+  Verifying  : perl-Exporter-5.68-3.el7.noarch                             5/35 
+  Verifying  : perl-constant-1.27-2.el7.noarch                             6/35 
+  Verifying  : perl-PathTools-3.40-5.el7.x86_64                            7/35 
+  Verifying  : kernel-devel-3.10.0-514.10.2.el7.x86_64                     8/35 
+  Verifying  : cpp-4.8.5-11.el7.x86_64                                     9/35 
+  Verifying  : 1:perl-Pod-Escapes-1.04-291.el7.noarch                     10/35 
+  Verifying  : glibc-headers-2.17-157.el7_3.1.x86_64                      11/35 
+  Verifying  : 1:perl-parent-0.225-244.el7.noarch                         12/35 
+  Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/35 
+  Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/35 
+  Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/35 
+  Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         16/35 
+  Verifying  : perl-Socket-2.010-4.el7.x86_64                             17/35 
+  Verifying  : glibc-devel-2.17-157.el7_3.1.x86_64                        18/35 
+  Verifying  : kernel-headers-3.10.0-514.16.1.el7.x86_64                  19/35 
+  Verifying  : perl-Carp-1.26-244.el7.noarch                              20/35 
+  Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      21/35 
+  Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 22/35 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                  23/35 
+  Verifying  : 4:perl-libs-5.16.3-291.el7.x86_64                          24/35 
+  Verifying  : 4:perl-macros-5.16.3-291.el7.x86_64                        25/35 
+  Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           26/35 
+  Verifying  : perl-Encode-2.51-7.el7.x86_64                              27/35 
+  Verifying  : perl-podlators-2.5.1-3.el7.noarch                          28/35 
+  Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                         29/35 
+  Verifying  : perl-File-Path-2.09-2.el7.noarch                           30/35 
+  Verifying  : 4:perl-5.16.3-291.el7.x86_64                               31/35 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                    32/35 
+  Verifying  : perl-Filter-1.49-3.el7.x86_64                              33/35 
+  Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     34/35 
+  Verifying  : gcc-4.8.5-11.el7.x86_64                                    35/35 
+
+Installed:
+  gcc.x86_64 0:4.8.5-11.el7        kernel-devel.x86_64 0:3.10.0-514.10.2.el7    
+  perl.x86_64 4:5.16.3-291.el7    
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-11.el7                                                     
+  glibc-devel.x86_64 0:2.17-157.el7_3.1                                         
+  glibc-headers.x86_64 0:2.17-157.el7_3.1                                       
+  kernel-headers.x86_64 0:3.10.0-514.16.1.el7                                   
+  libmpc.x86_64 0:1.0.1-3.el7                                                   
+  mpfr.x86_64 0:3.1.1-4.el7                                                     
+  perl-Carp.noarch 0:1.26-244.el7                                               
+  perl-Encode.x86_64 0:2.51-7.el7                                               
+  perl-Exporter.noarch 0:5.68-3.el7                                             
+  perl-File-Path.noarch 0:2.09-2.el7                                            
+  perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+  perl-Filter.x86_64 0:1.49-3.el7                                               
+  perl-Getopt-Long.noarch 0:2.40-2.el7                                          
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+  perl-PathTools.x86_64 0:3.40-5.el7                                            
+  perl-Pod-Escapes.noarch 1:1.04-291.el7                                        
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+  perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+  perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+  perl-Socket.x86_64 0:2.010-4.el7                                              
+  perl-Storable.x86_64 0:2.45-3.el7                                             
+  perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+  perl-Time-Local.noarch 0:1.2300-2.el7                                         
+  perl-constant.noarch 0:1.27-2.el7                                             
+  perl-libs.x86_64 4:5.16.3-291.el7                                             
+  perl-macros.x86_64 4:5.16.3-291.el7                                           
+  perl-parent.noarch 1:0.225-244.el7                                            
+  perl-podlators.noarch 0:2.5.1-3.el7                                           
+  perl-threads.x86_64 0:1.87-4.el7                                              
+  perl-threads-shared.x86_64 0:1.43-6.el7                                       
+
+Complete!
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+mount: /dev/loop0 is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 5.1.16 - guest version is unknown
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.1.16 Guest Additions for Linux...........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+vboxadd.sh: Building Guest Additions kernel modules.
+vboxadd.sh: Starting the VirtualBox Guest Additions.
+
+Could not find the X.Org or XFree86 Window System, skipping.
+==> node1: Checking for guest additions in VM...
+==> node1: Setting hostname...
+==> node1: Configuring and enabling network interfaces...
+==> node1: Mounting shared folders...
+    node1: /vagrant => /home/student/workspace/lesson14
+==> node1: Running provisioner: shell...
+    node1: Running: /tmp/vagrant-shell20170418-12516-g1c3hm.sh
+==> node1: Retrieving https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+==> node1: Preparing...                          ########################################
+==> node1: Updating / installing...
+==> node1: puppetlabs-release-pc1-1.1.0-5.el7    ########################################
+==> node1: Loaded plugins: fastestmirror
+==> node1: Loading mirror speeds from cached hostfile
+==> node1:  * base: ftp.byfly.by
+==> node1:  * extras: ftp.byfly.by
+==> node1:  * updates: ftp.byfly.by
+==> node1: Resolving Dependencies
+==> node1: --> Running transaction check
+==> node1: ---> Package puppet-agent.x86_64 0:1.10.0-1.el7 will be installed
+==> node1: --> Finished Dependency Resolution
+==> node1: 
+==> node1: Dependencies Resolved
+==> node1: 
+==> node1: ================================================================================
+==> node1:  Package            Arch         Version             Repository            Size
+==> node1: ================================================================================
+==> node1: Installing:
+==> node1:  puppet-agent       x86_64       1.10.0-1.el7        puppetlabs-pc1        26 M
+==> node1: 
+==> node1: Transaction Summary
+==> node1: ================================================================================
+==> node1: Install  1 Package
+==> node1: 
+==> node1: Total download size: 26 M
+==> node1: Installed size: 122 M
+==> node1: Downloading packages:
+==> node1: Public key for puppet-agent-1.10.0-1.el7.x86_64.rpm is not installed
+==> node1: warning: /var/cache/yum/x86_64/7/puppetlabs-pc1/packages/puppet-agent-1.10.0-1.el7.x86_64.rpm: Header V4 RSA/SHA1 Signature, key ID ef8d349f: NOKEY
+==> node1: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs-PC1
+==> node1: Importing GPG key 0x4BD6EC30:
+==> node1:  Userid     : "Puppet Labs Release Key (Puppet Labs Release Key) <info@puppetlabs.com>"
+==> node1:  Fingerprint: 47b3 20eb 4c7c 375a a9da e1a0 1054 b7a2 4bd6 ec30
+==> node1:  Package    : puppetlabs-release-pc1-1.1.0-5.el7.noarch (installed)
+==> node1:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs-PC1
+==> node1: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet-PC1
+==> node1: Importing GPG key 0xEF8D349F:
+==> node1:  Userid     : "Puppet, Inc. Release Key (Puppet, Inc. Release Key) <release@puppet.com>"
+==> node1:  Fingerprint: 6f6b 1550 9cf8 e59e 6e46 9f32 7f43 8280 ef8d 349f
+==> node1:  Package    : puppetlabs-release-pc1-1.1.0-5.el7.noarch (installed)
+==> node1:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppet-PC1
+==> node1: Running transaction check
+==> node1: Running transaction test
+==> node1: Transaction test succeeded
+==> node1: Running transaction
+==> node1: Warning: RPMDB altered outside of yum.
+==> node1:   Installing : puppet-agent-1.10.0-1.el7.x86_64                             1/1
+==> node1:  
+==> node1:   Verifying  : puppet-agent-1.10.0-1.el7.x86_64                             1/1
+==> node1:  
+==> node1: 
+==> node1: Installed:
+==> node1:   puppet-agent.x86_64 0:1.10.0-1.el7                                            
+==> node1: 
+==> node1: Complete!
+==> node1: [mNotice: /Service[puppet]/ensure: ensure changed 'stopped' to 'running'[0m
+==> node1: service { 'puppet':
+==> node1:   ensure => 'running',
+==> node1:   enable => 'true',
+==> node1: }
+==> node1: [0;36mDebug: Applying settings catalog for sections main, agent, ssl[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'confdir': 'File[/etc/puppetlabs/puppet]{:path=>"/etc/puppetlabs/puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'codedir': 'File[/etc/puppetlabs/code]{:path=>"/etc/puppetlabs/code", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Failed to load library 'cfpropertylist' for feature 'cfpropertylist'[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "operatingsystem".[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for operatingsystem.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: fact "facterversion" has resolved to "3.6.3".[0m
+==> node1: [0;36mDebug: Facter: fact "aio_agent_version" has resolved to "1.10.0".[0m
+==> node1: [0;36mDebug: Facter: searching "/opt/puppetlabs/facter/facts.d" for external facts.[0m
+==> node1: [0;36mDebug: Facter: skipping external facts for "/etc/facter/facts.d": No such file or directory[0m
+==> node1: [0;36mDebug: Facter: skipping external facts for "/etc/puppetlabs/facter/facts.d": No such file or directory[0m
+==> node1: [0;36mDebug: Facter: no external facts were found.[0m
+==> node1: [0;36mDebug: Facter: resolving operating system facts.[0m
+==> node1: [0;36mDebug: Facter: resolving kernel facts.[0m
+==> node1: [0;36mDebug: Facter: fact "kernel" has resolved to "Linux".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelrelease" has resolved to "3.10.0-514.10.2.el7.x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelmajversion" has resolved to "3.10".[0m
+==> node1: [0;36mDebug: Facter: fact "kernelversion" has resolved to "3.10.0".[0m
+==> node1: [0;36mDebug: Facter: executing command: lsb_release -a[0m
+==> node1: [0;36mDebug: Facter: lsb_release was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: fact "osfamily" has resolved to "RedHat".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystemmajrelease" has resolved to "7".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystemrelease" has resolved to "7.3.1611".[0m
+==> node1: [0;36mDebug: Facter: fact "hardwaremodel" has resolved to "x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "architecture" has resolved to "x86_64".[0m
+==> node1: [0;36mDebug: Facter: fact "operatingsystem" has resolved to "CentOS".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux" has resolved to true.[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_enforced" has resolved to true.[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_current_mode" has resolved to "enforcing".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_config_mode" has resolved to "enforcing".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_config_policy" has resolved to "targeted".[0m
+==> node1: [0;36mDebug: Facter: fact "selinux_policyversion" has resolved to "28".[0m
+==> node1: [0;36mDebug: Facter: fact "os" has resolved to {
+==> node1:   architecture => "x86_64",
+==> node1:   family => "RedHat",
+==> node1:   hardware => "x86_64",
+==> node1:   name => "CentOS",
+==> node1:   release => {
+==> node1:     full => "7.3.1611",
+==> node1:     major => "7",
+==> node1:     minor => "3"
+==> node1:   },
+==> node1:   selinux => {
+==> node1:     config_mode => "enforcing",
+==> node1:     config_policy => "targeted",
+==> node1:     current_mode => "enforcing",
+==> node1:     enabled => true,
+==> node1:     enforced => true,
+==> node1:     policy_version => "28"
+==> node1:   }
+==> node1: }.[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderDirectoryservice: file /usr/bin/dsimport does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderLdap: feature ldap is missing[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderPw: file pw does not exist[0m
+==> node1: [0;36mDebug: Puppet::Type::User::ProviderUser_role_add: file roleadd does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'cfpropertylist' for feature 'cfpropertylist'[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderDirectoryservice: file /usr/bin/dscl does not exist[0m
+==> node1: [0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderLdap: feature ldap is missing[0m
+==> node1: [0;36mDebug: Puppet::Type::Group::ProviderPw: file pw does not exist[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'vardir': 'File[/opt/puppetlabs/puppet/cache]{:path=>"/opt/puppetlabs/puppet/cache", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'logdir': 'File[/var/log/puppetlabs/puppet]{:path=>"/var/log/puppetlabs/puppet", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'statedir': 'File[/opt/puppetlabs/puppet/cache/state]{:path=>"/opt/puppetlabs/puppet/cache/state", :mode=>"1755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'rundir': 'File[/var/run/puppetlabs]{:path=>"/var/run/puppetlabs", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'libdir': 'File[/opt/puppetlabs/puppet/cache/lib]{:path=>"/opt/puppetlabs/puppet/cache/lib", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'hiera_config': 'File[/etc/puppetlabs/puppet/hiera.yaml]{:path=>"/etc/puppetlabs/puppet/hiera.yaml", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'preview_outputdir': 'File[/opt/puppetlabs/puppet/cache/preview]{:path=>"/opt/puppetlabs/puppet/cache/preview", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'certdir': 'File[/etc/puppetlabs/puppet/ssl/certs]{:path=>"/etc/puppetlabs/puppet/ssl/certs", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'ssldir': 'File[/etc/puppetlabs/puppet/ssl]{:path=>"/etc/puppetlabs/puppet/ssl", :mode=>"771", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'publickeydir': 'File[/etc/puppetlabs/puppet/ssl/public_keys]{:path=>"/etc/puppetlabs/puppet/ssl/public_keys", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'requestdir': 'File[/etc/puppetlabs/puppet/ssl/certificate_requests]{:path=>"/etc/puppetlabs/puppet/ssl/certificate_requests", :mode=>"755", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'privatekeydir': 'File[/etc/puppetlabs/puppet/ssl/private_keys]{:path=>"/etc/puppetlabs/puppet/ssl/private_keys", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'privatedir': 'File[/etc/puppetlabs/puppet/ssl/private]{:path=>"/etc/puppetlabs/puppet/ssl/private", :mode=>"750", :owner=>"root", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "hostname".[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for hostname.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: resolving networking facts.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip route show[0m
+==> node1: [0;36mDebug: Facter: default via 10.0.2.2 dev eth0  proto static  metric 100[0m
+==> node1: [0;36mDebug: Facter: 10.0.2.0/24 dev eth0  proto kernel  scope link  src 10.0.2.15  metric 100[0m
+==> node1: [0;36mDebug: Facter: 169.254.0.0/16 dev eth1  scope link  metric 1003[0m
+==> node1: [0;36mDebug: Facter: 192.168.10.0/24 dev eth1  proto kernel  scope link  src 192.168.10.102[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip -6 route show[0m
+==> node1: [0;36mDebug: Facter: unreachable ::/96 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable ::ffff:0.0.0.0/96 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:a00::/24 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:7f00::/24 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:a9fe::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:ac10::/28 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:c0a8::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 2002:e000::/19 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: unreachable 3ffe:ffff::/32 dev lo  metric 1024  error -113[0m
+==> node1: [0;36mDebug: Facter: fe80::/64 dev eth0  proto kernel  metric 256[0m
+==> node1: [0;36mDebug: Facter: fe80::/64 dev eth1  proto kernel  metric 256[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: using the FQDN returned by gethostname: puppet-node1.epbyminw2473.minsk.epam.com.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhclient" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhcp" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/dhcp3" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/lib/NetworkManager" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: reading "/var/lib/NetworkManager/dhclient-5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03-eth0.lease" for dhclient lease information.[0m
+==> node1: [0;36mDebug: Facter: reading "/var/lib/NetworkManager/dhclient-6c9a8c41-1c4c-3ce4-8100-8dce40f15739-eth1.lease" for dhclient lease information.[0m
+==> node1: [0;36mDebug: Facter: searching "/var/db" for dhclient lease files.[0m
+==> node1: [0;36mDebug: Facter: executing command: dhcpcd -U eth1[0m
+==> node1: [0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: executing command: dhcpcd -U lo[0m
+==> node1: [0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show eth0[0m
+==> node1: [0;36mDebug: Facter: 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT qlen 1000[0m
+==> node1: [0;36mDebug: Facter: link/ether 52:54:00:88:15:b6 brd ff:ff:ff:ff:ff:ff[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show eth1[0m
+==> node1: [0;36mDebug: Facter: 3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT qlen 1000[0m
+==> node1: [0;36mDebug: Facter: link/ether 08:00:27:90:a8:d0 brd ff:ff:ff:ff:ff:ff[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: executing command: /sbin/ip link show lo[0m
+==> node1: [0;36mDebug: Facter: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT qlen 1[0m
+==> node1: [0;36mDebug: Facter: link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00[0m
+==> node1: [0;36mDebug: Facter: process exited with status code 0.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_eth0" has resolved to "10.0.2.15".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress" has resolved to "10.0.2.15".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_eth0" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_eth0" has resolved to "10.0.2.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network" has resolved to "10.0.2.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_eth0" has resolved to "fe80::5054:ff:fe88:15b6".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6" has resolved to "fe80::5054:ff:fe88:15b6".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_eth0" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_eth0" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress_eth0" has resolved to "52:54:00:88:15:b6".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress" has resolved to "52:54:00:88:15:b6".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_eth0" has resolved to 1500.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_eth1" has resolved to "192.168.10.102".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_eth1" has resolved to "255.255.255.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_eth1" has resolved to "192.168.10.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_eth1" has resolved to "fe80::a00:27ff:fe90:a8d0".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_eth1" has resolved to "ffff:ffff:ffff:ffff::".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_eth1" has resolved to "fe80::".[0m
+==> node1: [0;36mDebug: Facter: fact "macaddress_eth1" has resolved to "08:00:27:90:a8:d0".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_eth1" has resolved to 1500.[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress_lo" has resolved to "127.0.0.1".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask_lo" has resolved to "255.0.0.0".[0m
+==> node1: [0;36mDebug: Facter: fact "network_lo" has resolved to "127.0.0.0".[0m
+==> node1: [0;36mDebug: Facter: fact "ipaddress6_lo" has resolved to "::1".[0m
+==> node1: [0;36mDebug: Facter: fact "netmask6_lo" has resolved to "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff".[0m
+==> node1: [0;36mDebug: Facter: fact "network6_lo" has resolved to "::1".[0m
+==> node1: [0;36mDebug: Facter: fact "mtu_lo" has resolved to 65536.[0m
+==> node1: [0;36mDebug: Facter: fact "hostname" has resolved to "puppet-node1".[0m
+==> node1: [0;36mDebug: Facter: fact "domain" has resolved to "epbyminw2473.minsk.epam.com".[0m
+==> node1: [0;36mDebug: Facter: fact "fqdn" has resolved to "puppet-node1.epbyminw2473.minsk.epam.com".[0m
+==> node1: [0;36mDebug: Facter: fact "interfaces" has resolved to "eth0,eth1,lo".[0m
+==> node1: [0;36mDebug: Facter: fact "dhcp_servers" has resolved to {
+==> node1:   eth0 => "10.0.2.2",
+==> node1:   system => "10.0.2.2"
+==> node1: }.[0m
+==> node1: [0;36mDebug: Facter: fact "networking" has resolved to {
+==> node1:   dhcp => "10.0.2.2",
+==> node1:   domain => "epbyminw2473.minsk.epam.com",
+==> node1:   fqdn => "puppet-node1.epbyminw2473.minsk.epam.com",
+==> node1:   hostname => "puppet-node1",
+==> node1:   interfaces => {
+==> node1:     eth0 => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "10.0.2.15",
+==> node1:           netmask => "255.255.255.0",
+==> node1:           network => "10.0.2.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "fe80::5054:ff:fe88:15b6",
+==> node1:           netmask => "ffff:ffff:ffff:ffff::",
+==> node1:           network => "fe80::"
+==> node1:         }
+==> node1:       ],
+==> node1:       dhcp => "10.0.2.2",
+==> node1:       ip => "10.0.2.15",
+==> node1:       ip6 => "fe80::5054:ff:fe88:15b6",
+==> node1:       mac => "52:54:00:88:15:b6",
+==> node1:       mtu => 1500,
+==> node1:       netmask => "255.255.255.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:       network => "10.0.2.0",
+==> node1:       network6 => "fe80::"
+==> node1:     },
+==> node1:     eth1 => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "192.168.10.102",
+==> node1:           netmask => "255.255.255.0",
+==> node1:           network => "192.168.10.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "fe80::a00:27ff:fe90:a8d0",
+==> node1:           netmask => "ffff:ffff:ffff:ffff::",
+==> node1:           network => "fe80::"
+==> node1:         }
+==> node1:       ],
+==> node1:       ip => "192.168.10.102",
+==> node1:       ip6 => "fe80::a00:27ff:fe90:a8d0",
+==> node1:       mac => "08:00:27:90:a8:d0",
+==> node1:       mtu => 1500,
+==> node1:       netmask => "255.255.255.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:       network => "192.168.10.0",
+==> node1:       network6 => "fe80::"
+==> node1:     },
+==> node1:     lo => {
+==> node1:       bindings => [
+==> node1:         {
+==> node1:           address => "127.0.0.1",
+==> node1:           netmask => "255.0.0.0",
+==> node1:           network => "127.0.0.0"
+==> node1:         }
+==> node1:       ],
+==> node1:       bindings6 => [
+==> node1:         {
+==> node1:           address => "::1",
+==> node1:           netmask => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+==> node1:           network => "::1"
+==> node1:         }
+==> node1:       ],
+==> node1:       ip => "127.0.0.1",
+==> node1:       ip6 => "::1",
+==> node1:       mtu => 65536,
+==> node1:       netmask => "255.0.0.0",
+==> node1:       netmask6 => "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+==> node1:       network => "127.0.0.0",
+==> node1:       network6 => "::1"
+==> node1:     }
+==> node1:   },
+==> node1:   ip => "10.0.2.15",
+==> node1:   ip6 => "fe80::5054:ff:fe88:15b6",
+==> node1:   mac => "52:54:00:88:15:b6",
+==> node1:   mtu => 1500,
+==> node1:   netmask => "255.255.255.0",
+==> node1:   netmask6 => "ffff:ffff:ffff:ffff::",
+==> node1:   network => "10.0.2.0",
+==> node1:   network6 => "fe80::",
+==> node1:   primary => "eth0"
+==> node1: }.[0m
+==> node1: [0;36mDebug: Facter: searching for custom fact "domain".[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/lib/facter.[0m
+==> node1: [0;36mDebug: Facter: searching for domain.rb in /opt/puppetlabs/puppet/cache/facts.[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'statefile': 'File[/opt/puppetlabs/puppet/cache/state/state.yaml]{:path=>"/opt/puppetlabs/puppet/cache/state/state.yaml", :mode=>"660", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'transactionstorefile': 'File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]{:path=>"/opt/puppetlabs/puppet/cache/state/transactionstore.yaml", :mode=>"660", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'clientyamldir': 'File[/opt/puppetlabs/puppet/cache/client_yaml]{:path=>"/opt/puppetlabs/puppet/cache/client_yaml", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'client_datadir': 'File[/opt/puppetlabs/puppet/cache/client_data]{:path=>"/opt/puppetlabs/puppet/cache/client_data", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'clientbucketdir': 'File[/opt/puppetlabs/puppet/cache/clientbucket]{:path=>"/opt/puppetlabs/puppet/cache/clientbucket", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'graphdir': 'File[/opt/puppetlabs/puppet/cache/state/graphs]{:path=>"/opt/puppetlabs/puppet/cache/state/graphs", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: Using settings: adding file resource 'pluginfactdest': 'File[/opt/puppetlabs/puppet/cache/facts.d]{:path=>"/opt/puppetlabs/puppet/cache/facts.d", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code]/selrange: Found selrange default 's0' for /etc/puppetlabs/code[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/seluser: Found seluser default 'system_u' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/selrole: Found selrole default 'object_r' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/seltype: Found seltype default 'var_log_t' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/var/log/puppetlabs/puppet]/selrange: Found selrange default 's0' for /var/log/puppetlabs/puppet[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/seluser: Found seluser default 'system_u' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/selrole: Found selrole default 'object_r' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/seltype: Found seltype default 'var_run_t' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/var/run/puppetlabs]/selrange: Found selrange default 's0' for /var/run/puppetlabs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/seltype: Found seltype default 'lib_t' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/lib[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/hiera.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/preview[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/certs[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/public_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/certificate_requests[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/private_keys[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]/selrange: Found selrange default 's0' for /etc/puppetlabs/puppet/ssl/private[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/state.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/transactionstore.yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/client_yaml[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/client_data[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/clientbucket[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/state/graphs[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/seluser: Found seluser default 'system_u' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/selrole: Found selrole default 'object_r' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/seltype: Found seltype default 'usr_t' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]/selrange: Found selrange default 's0' for /opt/puppetlabs/puppet/cache/facts.d[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/seluser: Found seluser default 'system_u' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/selrole: Found selrole default 'object_r' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/seltype: Found seltype default 'puppet_etc_t' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]/selrange: Found selrange default 's0' for /etc/puppetlabs/code/environments/production[0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/lib]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/hiera.yaml]: Adding autorequire relationship with File[/etc/puppetlabs/puppet][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/preview]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certs]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl]: Adding autorequire relationship with File[/etc/puppetlabs/puppet][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/public_keys]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/certificate_requests]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private_keys]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/puppet/ssl/private]: Adding autorequire relationship with File[/etc/puppetlabs/puppet/ssl][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/state.yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/transactionstore.yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_yaml]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/client_data]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/clientbucket]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/state/graphs]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache/state][0m
+==> node1: [0;36mDebug: /File[/opt/puppetlabs/puppet/cache/facts.d]: Adding autorequire relationship with File[/opt/puppetlabs/puppet/cache][0m
+==> node1: [0;36mDebug: /File[/etc/puppetlabs/code/environments/production]: Adding autorequire relationship with File[/etc/puppetlabs/code][0m
+==> node1: [0;36mDebug: Finishing transaction 22211180[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Evicting cache entry for environment 'production'[0m
+==> node1: [0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+==> node1: [0;36mDebug: Runtime environment: puppet_version=4.10.0, ruby_version=2.1.9, run_mode=agent, default_encoding=UTF-8[0m
+==> node1: [0;32mInfo: Creating a new SSL key for puppet-node1.epbyminw2473.minsk.epam.com[0m
+==> node1: [0;36mDebug: Using cached certificate for ca[0m
+==> node1: [0;36mDebug: Dynamically-bound server lookup failed, falling back to ca_server setting[0m
+==> node1: [0;36mDebug: Dynamically-bound port lookup failed; falling back to ca_port setting[0m
+==> node1: [0;36mDebug: Using cached certificate for ca[0m
+==> node1: [0;36mDebug: Dynamically-bound server lookup failed, falling back to ca_server setting[0m
+==> node1: [0;36mDebug: Dynamically-bound port lookup failed; falling back to ca_port setting[0m
+==> node1: [0;36mDebug: Creating new connection for https://puppet-server.epbyminw2473.minsk.epam.com:8140[0m
+==> node1: [0;32mInfo: Caching certificate for puppet-node1.epbyminw2473.minsk.epam.com[0m
+==> node1: Exiting; failed to retrieve certificate and waitforcert is disabled
+==> node1: [1;31mError: Could not request certificate: The certificate retrieved from the master does not match the agent's private key.
+==> node1: Certificate fingerprint: EB:F5:87:E7:E1:41:AE:D3:1C:42:8C:33:58:3A:4A:5F:F5:B1:67:14:31:5B:18:B0:EF:82:CD:13:0B:12:CE:1E
+==> node1: To fix this, remove the certificate from both the master and the agent and then start a puppet run, which will automatically regenerate a certificate.
+==> node1: On the master:
+==> node1:   puppet cert clean puppet-node1.epbyminw2473.minsk.epam.com
+==> node1: On the agent:
+==> node1:   1a. On most platforms: find /etc/puppetlabs/puppet/ssl -name puppet-node1.epbyminw2473.minsk.epam.com.pem -delete
+==> node1:   1b. On Windows: del "\etc\puppetlabs\puppet\ssl\certs\puppet-node1.epbyminw2473.minsk.epam.com.pem" /f
+==> node1:   2. puppet agent -t
+==> node1: [0m
+==> node1: provisioned
