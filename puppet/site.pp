@@ -1,4 +1,4 @@
-node 'puppet-node1.epbyminw2473.minsk.epam.com' {
+node 'puppet-node1.2473' {
    include jboss
    include deploy
  } 
